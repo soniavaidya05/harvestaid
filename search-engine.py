@@ -24,6 +24,7 @@ def searchFor(searchPhrase, catListings):
     res.append(prio['prio3'])
     res.append(prio['prio4'])
     return res
+ # returns list of lists of listings instead of a list of listings? 
 
 def advancedSearch(catListings, productPhrase, locationPhrase = None):
     '''
