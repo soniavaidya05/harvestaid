@@ -19,10 +19,10 @@ def searchFor(searchPhrase, catListings):
             prio['prio4'].append(listing)
 
     res = []
-    res.append(prio['prio1'])
-    res.append(prio['prio2'])
-    res.append(prio['prio3'])
-    res.append(prio['prio4'])
+    res.extend(prio['prio1'])
+    res.extend(prio['prio2'])
+    res.extend(prio['prio3'])
+    res.extend(prio['prio4'])
     return res
  # returns list of lists of listings instead of a list of listings? 
 
@@ -32,7 +32,7 @@ def advancedSearch(catListings, productPhrase, locationPhrase = None):
     '''
 
     #checking if advanced search is even required
-    if not location:
+    if not locationPhrase:
         return searchFor(productPhrase, catListings)
     
     productPhrase = productPhrase.lower()
@@ -48,7 +48,7 @@ def advancedSearch(catListings, productPhrase, locationPhrase = None):
             prio['prio3'].append(listing)
     
     res = []
-    res.append(prio['prio1'])
-    res.append(prio['prio2'])
-    res.append(prio['prio3'])
+    res.extend(prio['prio1'])
+    res.extend(prio['prio2'])
+    res.extend(prio['prio3'])
     return res
