@@ -14,8 +14,8 @@ class User:
         self.email = email
         self.needs = []
     
-    def new_listing(self, category:str, product_name: str, location: str, description: str) -> None: 
-        listing = Listing(self.username, category, product_name, location, description)
+    def new_listing(self, category:str, product_name: str, location: str, description: str, image_url: str) -> None: 
+        listing = Listing(self.username, category, product_name, location, description, image_url)
         self.listings.append(listing)
         staticvariables.map[category].add(listing)
 

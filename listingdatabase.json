@@ -1,366 +1,322 @@
 [
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Corn Seeds",
-        "location": "Toronto",
-        "description": "Selling 1 bag of Corn Seeds!"
+        "location": "Mumbai",
+        "description": "Selling 1 bag of Corn Seeds!",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Wheat Seeds",
-        "location": "Ottawa",
-        "description": "High-quality wheat seeds for optimal yield."
+        "location": "Chennai",
+        "description": "High-quality wheat seeds for optimal yield.",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Tomato Seeds",
-        "location": "Mississauga",
-        "description": "Fresh and organic tomato seeds available!"
+        "location": "Jaipur",
+        "description": "Fresh and organic tomato seeds available!",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Carrot Seeds",
-        "location": "Brampton",
-        "description": "Nutritious carrot seeds, perfect for home gardens."
+        "location": "Ahmedabad",
+        "description": "Nutritious carrot seeds, perfect for home gardens.",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Cucumber Seeds",
-        "location": "Hamilton",
-        "description": "Crisp cucumber seeds for summer harvest."
+        "location": "Hyderabad",
+        "description": "Crisp cucumber seeds for summer harvest.",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Lettuce Seeds",
-        "location": "London",
-        "description": "Get your fresh lettuce seeds for a healthy salad!"
+        "location": "Pune",
+        "description": "Get your fresh lettuce seeds for a healthy salad!",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Bell Pepper Seeds",
-        "location": "Markham",
-        "description": "Vibrant bell pepper seeds for your garden."
+        "location": "Bangalore",
+        "description": "Vibrant bell pepper seeds for your garden.",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Pumpkin Seeds",
-        "location": "Kitchener",
-        "description": "Large pumpkin seeds for fall harvest."
+        "location": "Nagpur",
+        "description": "Large pumpkin seeds for fall harvest.",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Radish Seeds",
-        "location": "Windsor",
-        "description": "Fast-growing radish seeds, ready to harvest in weeks."
+        "location": "Surat",
+        "description": "Fast-growing radish seeds, ready to harvest in weeks.",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "maira",
+        "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Herb Seeds",
-        "location": "Richmond Hill",
-        "description": "Variety of herb seeds for flavor in your dishes!"
+        "location": "Bhopal",
+        "description": "Variety of herb seeds for flavor in your dishes!",
+        "image_url": "/static/images/product.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Farm Hand",
-        "location": "Chatham-Kent",
-        "description": "Dedicated farm hand available for planting, harvesting, and general maintenance, experienced in drought-resistant farming techniques."
+        "location": "Karachi",
+        "description": "Dedicated farm hand available for drought-resistant farming.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Livestock Caretaker",
-        "location": "Chatham-Kent",
-        "description": "Experienced livestock caretaker available to manage feeding, grooming, and health monitoring of farm animals during challenging conditions."
+        "location": "Lahore",
+        "description": "Experienced livestock caretaker for challenging conditions.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Irrigation Technician",
-        "location": "Chatham-Kent",
-        "description": "Skilled irrigation technician available to install and maintain water-efficient irrigation systems for drought-prone crops."
+        "location": "Multan",
+        "description": "Skilled technician for water-efficient irrigation systems.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Crop Scout",
-        "location": "Chatham-Kent",
-        "description": "Detail-oriented crop scout available for field inspections, pest management, and monitoring soil moisture levels."
+        "location": "Islamabad",
+        "description": "Available for field inspections, pest management, soil monitoring.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Greenhouse Assistant",
-        "location": "Chatham-Kent",
-        "description": "Enthusiastic greenhouse assistant available for planting, watering, and caring for drought-tolerant plants and flowers."
+        "location": "Quetta",
+        "description": "Greenhouse assistant for drought-tolerant plants and flowers.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Farm Equipment Operator",
-        "location": "Chatham-Kent",
-        "description": "Certified farm equipment operator available to drive tractors and operate machinery for efficient field work, focusing on drought mitigation."
+        "location": "Faisalabad",
+        "description": "Certified operator focusing on drought mitigation.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Organic Farm Worker",
-        "location": "Chatham-Kent",
-        "description": "Passionate organic farm worker available for hands-on tasks, including weeding, planting, and harvesting drought-resistant crops."
+        "location": "Peshawar",
+        "description": "Organic farm worker available for hands-on tasks in drought areas.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Dairy Farm Assistant",
-        "location": "Chatham-Kent",
-        "description": "Reliable dairy farm assistant available for milking, feeding, and caring for dairy cattle, implementing water conservation practices."
+        "location": "Hyderabad (Pakistan)",
+        "description": "Dairy farm assistant implementing water conservation practices.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Harvesting Team Member",
-        "location": "Chatham-Kent",
-        "description": "Hardworking harvesting team member available for seasonal work, experienced in picking fruits and vegetables with a focus on sustainable practices."
+        "location": "Rawalpindi",
+        "description": "Experienced in sustainable picking practices during drought.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "amin",
+        "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Poultry Farm Worker",
-        "location": "Chatham-Kent",
-        "description": "Dedicated poultry farm worker available for managing feeding, health checks, and egg collection, aware of drought-related challenges."
+        "location": "Sialkot",
+        "description": "Poultry worker managing drought-related challenges.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
-        "username": "sonia",
+        "contact": "sonia@gmail.com",
         "category": "Transportation",
         "product name": "Truck for Rent",
-        "location": "Chatham-Kent",
-        "description": "Truck License"
+        "location": "Karachi",
+        "description": "6 hours",
+        "image_url": "/static/images/transportation.jpg"
     },
     {
-        "username": "sonia",
+        "contact": "sonia@gmail.com",
+        "category": "Transportation",
+        "product name": "Donkey for loan",
+        "location": "Marrakech",
+        "description": "5 hours",
+        "image_url": "/static/images/transportation.jpg"
+    },
+    {
+        "contact": "sonia@gmail.com",
+        "category": "Transportation",
+        "product name": "Car for rent",
+        "location": "Hyderabad (India)",
+        "description": "8 hours",
+        "image_url": "/static/images/transportation.jpg"
+    },
+    {
+        "contact": "sonia@gmail.com",
         "category": "Transportation",
         "product name": "Truck for Rent",
-        "location": "Windsor",
-        "description": "Truck License"
+        "location": "Ahmedabad",
+        "description": "7 hours",
+        "image_url": "/static/images/transportation.jpg"
     },
     {
-        "username": "sonia",
+        "contact": "sonia@gmail.com",
         "category": "Transportation",
-        "product name": "Truck for Rent",
-        "location": "Sarnia",
-        "description": "Truck License"
+        "product name": "Van for Rent",
+        "location": "Jaipur",
+        "description": "9 hours",
+        "image_url": "/static/images/transportation.jpg"
     },
     {
-        "username": "sonia",
-        "category": "Transportation",
-        "product name": "Truck for Rent",
-        "location": "London",
-        "description": "Truck License"
-    },
-    {
-        "username": "sonia",
-        "category": "Transportation",
-        "product name": "Truck for Rent",
-        "location": "Leamington",
-        "description": "Truck License"
-    },
-    {
-        "username": "sonia",
-        "category": "Transportation",
-        "product name": "Truck for Rent",
-        "location": "St. Thomas",
-        "description": "Truck License"
-    },
-    {
-        "username": "sonia",
-        "category": "Transportation",
-        "product name": "Truck for Rent",
-        "location": "Essex",
-        "description": "Truck License"
-    },
-    {
-        "username": "sonia",
-        "category": "Transportation",
-        "product name": "Truck for Rent",
-        "location": "Tilbury",
-        "description": "Truck License"
-    },
-    {
-        "username": "sonia",
-        "category": "Transportation",
-        "product name": "Truck for Rent",
-        "location": "Blenheim",
-        "description": "Truck License"
-    },
-    {
-        "username": "sonia",
-        "category": "Transportation",
-        "product name": "Truck for Rent",
-        "location": "Chatham",
-        "description": "Truck License"
-    },
-    {
-        "username": "sonia",
-        "category": "Transportation",
-        "product name": "Truck for Rent",
-        "location": "Kingsville",
-        "description": "Truck License"
-    },
-    {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Irrigation",
-        "location": "Chatham-Kent",
-        "description": "Licensed in setting up Irrigation Systems"
+        "location": "Casablanca",
+        "description": "Licensed in setting up irrigation systems.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Agronomy Consultant",
-        "location": "Essex County",
-        "description": "Expert agronomy consultant providing crop management advice and soil health assessments."
+        "location": "Marrakech",
+        "description": "Crop management advice and soil health assessments.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Farm Management Advisor",
-        "location": "Haldimand County",
-        "description": "Experienced farm management advisor offering strategic planning and operational efficiency solutions."
+        "location": "Agadir",
+        "description": "Farm management advisor for strategic planning.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Livestock Nutritionist",
-        "location": "Lambton County",
-        "description": "Certified livestock nutritionist specializing in feed formulation and animal health optimization."
+        "location": "Fes",
+        "description": "Livestock nutrition specialist for health optimization.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Pest Control Specialist",
-        "location": "Perth County",
-        "description": "Licensed pest control specialist providing organic and sustainable solutions for crop protection."
+        "location": "Tangier",
+        "description": "Licensed pest control for sustainable crop protection.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Veterinarian",
-        "location": "Brant County",
-        "description": "Qualified veterinarian offering health care services for farm animals and livestock."
+        "location": "Rabat",
+        "description": "Veterinarian providing health care for farm animals.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Soil Scientist",
-        "location": "Grey County",
-        "description": "Professional soil scientist conducting soil tests and recommending amendments for optimal crop growth."
+        "location": "Ouarzazate",
+        "description": "Conducting soil tests and recommending crop amendments.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Agricultural Engineer",
-        "location": "Norfolk County",
-        "description": "Skilled agricultural engineer focused on designing efficient farm structures and machinery."
+        "location": "Essaouira",
+        "description": "Engineer focused on designing efficient farm structures.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Farm Safety Consultant",
-        "location": "Dufferin County",
-        "description": "Certified farm safety consultant providing assessments and training to enhance farm safety practices."
+        "location": "El Jadida",
+        "description": "Providing assessments and training for farm safety.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "nathan",
+        "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Organic Certification Specialist",
-        "location": "Wellington County",
-        "description": "Specialist in organic certification processes and compliance for sustainable farming practices."
+        "location": "Meknes",
+        "description": "Specialist in organic certification for sustainable farming.",
+        "image_url": "/static/images/service.jpg"
     },
     {
-        "username": "kevin",
+        "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Chickens",
-        "location": "Tilbury",
-        "description": "5 available"
+        "location": "Karachi",
+        "description": "5 available",
+        "image_url": "/static/images/livestock.jpg"
     },
     {
-        "username": "kevin",
+        "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Cattle",
-        "location": "Tilbury",
-        "description": "5 available"
+        "location": "Marrakech",
+        "description": "5 available",
+        "image_url": "/static/images/livestock.jpg"
     },
     {
-        "username": "kevin",
+        "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Sheep",
-        "location": "Tilbury",
-        "description": "8 available"
+        "location": "Tangier",
+        "description": "8 available",
+        "image_url": "/static/images/livestock.jpg"
     },
     {
-        "username": "kevin",
+        "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Goats",
-        "location": "Tilbury",
-        "description": "4 available"
+        "location": "Fes",
+        "description": "4 available",
+        "image_url": "/static/images/livestock.jpg"
     },
     {
-        "username": "kevin",
+        "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Pigs",
-        "location": "Tilbury",
-        "description": "6 available"
-    },
-    {
-        "username": "kevin",
-        "category": "Livestock",
-        "product name": "Chickens",
-        "location": "Tilbury",
-        "description": "20 available"
-    },
-    {
-        "username": "kevin",
-        "category": "Livestock",
-        "product name": "Turkeys",
-        "location": "Tilbury",
-        "description": "10 available"
-    },
-    {
-        "username": "kevin",
-        "category": "Livestock",
-        "product name": "Ducks",
-        "location": "Tilbury",
-        "description": "15 available"
-    },
-    {
-        "username": "kevin",
-        "category": "Livestock",
-        "product name": "Donkeys",
-        "location": "Tilbury",
-        "description": "2 available"
-    },
-    {
-        "username": "kevin",
-        "category": "Livestock",
-        "product name": "Geese",
-        "location": "Tilbury",
-        "description": "5 available"
-    },
-    {
-        "username": "kevin",
-        "category": "Livestock",
-        "product name": "Quail",
-        "location": "Tilbury",
-        "description": "30 available"
+        "location": "Multan",
+        "description": "6 available",
+        "image_url": "/static/images/livestock.jpg"
     }
 ]
