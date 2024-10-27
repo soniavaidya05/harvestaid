@@ -65,13 +65,13 @@ kevin.new_listing("Livestock_Category", "Geese", "Tilbury", "5 available")
 kevin.new_listing("Livestock_Category", "Quail", "Tilbury", "30 available")
 
 
-
+users = [maira, amin, sonia, nathan, kevin]
 # Write data to JSON file
 data = []
-for userlistings in [maira.listings, amin.listings, sonia.listings, nathan.listings, kevin.listings]:
-    for listing in userlistings:
+for user in users:
+    for listing in user.listings:
         entry = {
-            "username": listing.username,
+            "contact": user.email,
             "category": str(listing.category),
             "product name": listing.product_name,
             "location": listing.location,
