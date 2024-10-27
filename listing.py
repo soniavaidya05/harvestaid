@@ -1,3 +1,5 @@
+import Category
+
 class Listing:
     """This class is the listing class.
     - Category 
