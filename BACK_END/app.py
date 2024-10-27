@@ -4,7 +4,7 @@ import json
 app = Flask(__name__)
 
 def load_products():
-    with open('insert_name_here.json') as f:
+    with open('listingdatabase.json') as f:
         return json.load(f)
 
 @app.route('/')

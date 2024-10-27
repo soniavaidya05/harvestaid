@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Grid</title>
+    <title>Listing Grid</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,24 +31,28 @@
     </style>
 </head>
 <body>
-    <h1>Product Grid</h1>
-    <div class="grid-container" id="product-grid"></div>
+    <h1>Listing Grid</h1>
+    <div class="grid-container" id="listing-grid"></div>
 
     <script>
-        // Function to fetch products and render them
-        function fetchProducts() {
-            fetch('/products')
+        // Function to fetch listings and render them
+        function fetchListings() {
+            fetch('/listings')
                 .then(response => response.json())
-                .then(products => {
-                    const gridContainer = document.getElementById('product-grid');
-                    products.forEach(product => {
-                        // Create a grid item for each product
+                .then(listings => {
+                    const gridContainer = document.getElementById('listing-grid');
+                    listings.forEach(lsiting => {
+                        // Create a grid item for each listing
                         const gridItem = document.createElement('div');
-                        gridItem.className = 'grid-item';
+                        gridItem.className = 'listing-item';
                         gridItem.innerHTML = `
-                            <img src="${product.image}" alt="${product.name}">
-                            <h3>${product.name}</h3>
-                            <p>${product.location}</p>
+                            <img src="${listing.image}" alt="${listing["product name"]}">
+                            <h3>${listing["product name"]}</h3>
+                            <p>${listing.category}</p>
+                            <p>${listing.location}</p>
+                            <p>${listing.description}</p>
+                            <p>${listing.username}</p>
+
                         `;
                         gridContainer.appendChild(gridItem);
                     });
