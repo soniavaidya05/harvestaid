@@ -19,11 +19,12 @@ def searchFor(searchPhrase, catListings):
             prio['prio4'].append(listing)
 
     res = []
-    res.append(prio['prio1'])
-    res.append(prio['prio2'])
-    res.append(prio['prio3'])
-    res.append(prio['prio4'])
+    res.extend(prio['prio1'])
+    res.extend(prio['prio2'])
+    res.extend(prio['prio3'])
+    res.extend(prio['prio4'])
     return res
+ # returns list of lists of listings instead of a list of listings? 
 
 def advancedSearch(catListings, productPhrase, locationPhrase = None, have = None):
     '''
@@ -45,11 +46,11 @@ def advancedSearch(catListings, productPhrase, locationPhrase = None, have = Non
                 prio['prio2'].append(listing)
             elif productPhrase in listing.description.lower() or locationPhrase in listing.description.lower():
                 prio['prio3'].append(listing)
-        
+
         res = []
-        res.append(prio['prio1'])
-        res.append(prio['prio2'])
-        res.append(prio['prio3'])
+        res.extend(prio['prio1'])
+        res.extend(prio['prio2'])
+        res.extend(prio['prio3'])
         return res
     elif not locationPhrase:
         productPhrase = productPhrase.lower()
@@ -62,10 +63,10 @@ def advancedSearch(catListings, productPhrase, locationPhrase = None, have = Non
                 prio['prio1'].append(listing)
             elif productPhrase in listing.product_name.lower() and have in listing.user.need:
                 prio['prio2'].append(listing)
-        
+
         res = []
-        res.append(prio['prio1'])
-        res.append(prio['prio2'])
+        res.extend(prio['prio1'])
+        res.extend(prio['prio2'])
         return res
     else:
         productPhrase = productPhrase.lower()
@@ -81,9 +82,9 @@ def advancedSearch(catListings, productPhrase, locationPhrase = None, have = Non
                 prio['prio2'].append(listing)
             elif productPhrase in listing.product_name.lower() and (have in listing.user.need.lower() or locationPhrase in listing.location.lower()):
                 prio['prio3'].append(listing)
-        
+
         res = []
-        res.append(prio['prio1'])
-        res.append(prio['prio2'])
-        res.append(prio['prio3'])
+        res.extend(prio['prio1'])
+        res.extend(prio['prio2'])
+        res.extend(prio['prio3'])
         return res
