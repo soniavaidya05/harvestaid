@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listing Grid</title>
+    <title>Listings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif; /* Fallback font */
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: rgb(178, 192, 176);
+        }
+        h1 {
+            color: rgb(245, 244, 227); /* Change this to your desired title color */
+            font-family: 'Chewy', cursive; /* Set to Chewy font */
+            text-align: center; /* Center the title */
+            font-size: 48px; /* Adjust size as needed */
         }
         .grid-container {
             display: grid;
@@ -18,7 +24,7 @@
             padding: 10px;
         }
         .listing-item {
-            background: white;
+            background: rgb(245, 244, 227);
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 10px;
@@ -32,15 +38,29 @@
 </head>
 <body>
     <h1>Listing Grid</h1>
+    
+    <!-- Dropdown for selecting categories -->
+    <label for="category-select">Select a category:</label>
+    <select id="category-select" onchange="fetchListings()">
+        <option value="">All</option>
+        <option value="Product">Product</option>
+        <option value="Labour">Labour</option>
+        <option value="Services">Services</option>
+        <option value="Transportation">Transportation</option>
+        <option value="Livestock">Livestock</option>
+    </select>
+    
     <div class="grid-container" id="listing-grid"></div>
 
     <script>
-        // Function to fetch listings and render them
+        // Function to fetch listings based on selected category and render them
         function fetchListings() {
-            fetch('/listings')
+            const category = document.getElementById('category-select').value; // Get selected category
+            fetch(`/listings?category=${category}`)
                 .then(response => response.json())
                 .then(listings => {
                     const gridContainer = document.getElementById('listing-grid');
+                    gridContainer.innerHTML = ''; // Clear previous listings
                     listings.forEach(listing => {
                         // Create a grid item for each listing
                         const gridItem = document.createElement('div');
@@ -51,9 +71,8 @@
                             <p>${listing.category}</p>
                             <p>${listing.location}</p>
                             <p>${listing.description}</p>
-                            <p>${listing.username}</p>
-
-                        `
+                            <p>${listing.contact}</p>
+                        `;
                         gridContainer.appendChild(gridItem);
                     });
                 })

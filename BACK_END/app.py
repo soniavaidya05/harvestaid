@@ -15,6 +15,9 @@ def index():
 def get_products():
     products = load_products()
     category = request.args.get('category')  # Get the category from query parameters
+    if category:
+        # Filter products by category
+        products = [product for product in products if product['category'] == category]
     return jsonify(products)
 
 @app.route('/listings/<int:listing_id>', methods=['GET'])
