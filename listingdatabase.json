@@ -4,279 +4,319 @@
         "category": "Product",
         "product name": "Corn Seeds",
         "location": "Mumbai",
-        "description": "Selling 1 bag of Corn Seeds!"
+        "description": "Selling 1 bag of Corn Seeds!",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Wheat Seeds",
         "location": "Chennai",
-        "description": "High-quality wheat seeds for optimal yield."
+        "description": "High-quality wheat seeds for optimal yield.",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Tomato Seeds",
         "location": "Jaipur",
-        "description": "Fresh and organic tomato seeds available!"
+        "description": "Fresh and organic tomato seeds available!",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Carrot Seeds",
         "location": "Ahmedabad",
-        "description": "Nutritious carrot seeds, perfect for home gardens."
+        "description": "Nutritious carrot seeds, perfect for home gardens.",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Cucumber Seeds",
         "location": "Hyderabad",
-        "description": "Crisp cucumber seeds for summer harvest."
+        "description": "Crisp cucumber seeds for summer harvest.",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Lettuce Seeds",
         "location": "Pune",
-        "description": "Get your fresh lettuce seeds for a healthy salad!"
+        "description": "Get your fresh lettuce seeds for a healthy salad!",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Bell Pepper Seeds",
         "location": "Bangalore",
-        "description": "Vibrant bell pepper seeds for your garden."
+        "description": "Vibrant bell pepper seeds for your garden.",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Pumpkin Seeds",
         "location": "Nagpur",
-        "description": "Large pumpkin seeds for fall harvest."
+        "description": "Large pumpkin seeds for fall harvest.",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Radish Seeds",
         "location": "Surat",
-        "description": "Fast-growing radish seeds, ready to harvest in weeks."
+        "description": "Fast-growing radish seeds, ready to harvest in weeks.",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "maira@gmail.com",
         "category": "Product",
         "product name": "Herb Seeds",
         "location": "Bhopal",
-        "description": "Variety of herb seeds for flavor in your dishes!"
+        "description": "Variety of herb seeds for flavor in your dishes!",
+        "image_url": "/static/images/product.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Farm Hand",
         "location": "Karachi",
-        "description": "Dedicated farm hand available for drought-resistant farming."
+        "description": "Dedicated farm hand available for drought-resistant farming.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Livestock Caretaker",
         "location": "Lahore",
-        "description": "Experienced livestock caretaker for challenging conditions."
+        "description": "Experienced livestock caretaker for challenging conditions.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Irrigation Technician",
         "location": "Multan",
-        "description": "Skilled technician for water-efficient irrigation systems."
+        "description": "Skilled technician for water-efficient irrigation systems.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Crop Scout",
         "location": "Islamabad",
-        "description": "Available for field inspections, pest management, soil monitoring."
+        "description": "Available for field inspections, pest management, soil monitoring.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Greenhouse Assistant",
         "location": "Quetta",
-        "description": "Greenhouse assistant for drought-tolerant plants and flowers."
+        "description": "Greenhouse assistant for drought-tolerant plants and flowers.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Farm Equipment Operator",
         "location": "Faisalabad",
-        "description": "Certified operator focusing on drought mitigation."
+        "description": "Certified operator focusing on drought mitigation.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Organic Farm Worker",
         "location": "Peshawar",
-        "description": "Organic farm worker available for hands-on tasks in drought areas."
+        "description": "Organic farm worker available for hands-on tasks in drought areas.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Dairy Farm Assistant",
         "location": "Hyderabad (Pakistan)",
-        "description": "Dairy farm assistant implementing water conservation practices."
+        "description": "Dairy farm assistant implementing water conservation practices.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Harvesting Team Member",
         "location": "Rawalpindi",
-        "description": "Experienced in sustainable picking practices during drought."
+        "description": "Experienced in sustainable picking practices during drought.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "amin@gmail.com",
         "category": "Labour",
         "product name": "Poultry Farm Worker",
         "location": "Sialkot",
-        "description": "Poultry worker managing drought-related challenges."
+        "description": "Poultry worker managing drought-related challenges.",
+        "image_url": "/static/images/labour.jpg"
     },
     {
         "contact": "sonia@gmail.com",
         "category": "Transportation",
         "product name": "Truck for Rent",
         "location": "Karachi",
-        "description": "Truck License"
+        "description": "6 hours",
+        "image_url": "/static/images/transportation.jpg"
     },
     {
         "contact": "sonia@gmail.com",
         "category": "Transportation",
-        "product name": "Truck for Rent",
+        "product name": "Donkey for loan",
         "location": "Marrakech",
-        "description": "Truck License"
+        "description": "5 hours",
+        "image_url": "/static/images/transportation.jpg"
     },
     {
         "contact": "sonia@gmail.com",
         "category": "Transportation",
-        "product name": "Truck for Rent",
+        "product name": "Car for rent",
         "location": "Hyderabad (India)",
-        "description": "Truck License"
+        "description": "8 hours",
+        "image_url": "/static/images/transportation.jpg"
     },
     {
         "contact": "sonia@gmail.com",
         "category": "Transportation",
         "product name": "Truck for Rent",
         "location": "Ahmedabad",
-        "description": "Truck License"
+        "description": "7 hours",
+        "image_url": "/static/images/transportation.jpg"
     },
     {
         "contact": "sonia@gmail.com",
         "category": "Transportation",
-        "product name": "Truck for Rent",
+        "product name": "Van for Rent",
         "location": "Jaipur",
-        "description": "Truck License"
+        "description": "9 hours",
+        "image_url": "/static/images/transportation.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Irrigation",
         "location": "Casablanca",
-        "description": "Licensed in setting up irrigation systems."
+        "description": "Licensed in setting up irrigation systems.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Agronomy Consultant",
         "location": "Marrakech",
-        "description": "Crop management advice and soil health assessments."
+        "description": "Crop management advice and soil health assessments.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Farm Management Advisor",
         "location": "Agadir",
-        "description": "Farm management advisor for strategic planning."
+        "description": "Farm management advisor for strategic planning.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Livestock Nutritionist",
         "location": "Fes",
-        "description": "Livestock nutrition specialist for health optimization."
+        "description": "Livestock nutrition specialist for health optimization.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Pest Control Specialist",
         "location": "Tangier",
-        "description": "Licensed pest control for sustainable crop protection."
+        "description": "Licensed pest control for sustainable crop protection.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Veterinarian",
         "location": "Rabat",
-        "description": "Veterinarian providing health care for farm animals."
+        "description": "Veterinarian providing health care for farm animals.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Soil Scientist",
         "location": "Ouarzazate",
-        "description": "Conducting soil tests and recommending crop amendments."
+        "description": "Conducting soil tests and recommending crop amendments.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Agricultural Engineer",
         "location": "Essaouira",
-        "description": "Engineer focused on designing efficient farm structures."
+        "description": "Engineer focused on designing efficient farm structures.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Farm Safety Consultant",
         "location": "El Jadida",
-        "description": "Providing assessments and training for farm safety."
+        "description": "Providing assessments and training for farm safety.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "nathan@gmail.com",
         "category": "Services",
         "product name": "Organic Certification Specialist",
         "location": "Meknes",
-        "description": "Specialist in organic certification for sustainable farming."
+        "description": "Specialist in organic certification for sustainable farming.",
+        "image_url": "/static/images/service.jpg"
     },
     {
         "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Chickens",
         "location": "Karachi",
-        "description": "5 available"
+        "description": "5 available",
+        "image_url": "/static/images/livestock.jpg"
     },
     {
         "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Cattle",
         "location": "Marrakech",
-        "description": "5 available"
+        "description": "5 available",
+        "image_url": "/static/images/livestock.jpg"
     },
     {
         "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Sheep",
         "location": "Tangier",
-        "description": "8 available"
+        "description": "8 available",
+        "image_url": "/static/images/livestock.jpg"
     },
     {
         "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Goats",
         "location": "Fes",
-        "description": "4 available"
+        "description": "4 available",
+        "image_url": "/static/images/livestock.jpg"
     },
     {
         "contact": "kevin@gmail.com",
         "category": "Livestock",
         "product name": "Pigs",
         "location": "Multan",
-        "description": "6 available"
+        "description": "6 available",
+        "image_url": "/static/images/livestock.jpg"
     }
 ]
