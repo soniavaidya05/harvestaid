@@ -64,8 +64,8 @@ kevin.new_listing("Livestock_Category", "Donkeys", "Tilbury", "2 available")
 kevin.new_listing("Livestock_Category", "Geese", "Tilbury", "5 available")
 kevin.new_listing("Livestock_Category", "Quail", "Tilbury", "30 available")
 
-users = [maira, amin, sonia, nathan, kevin]
 
+users = [maira, amin, sonia, nathan, kevin]
 # Write data to JSON file
 data = []
 for user in users:
