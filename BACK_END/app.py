@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 import json
 
 app = Flask(__name__)
@@ -14,6 +14,11 @@ def index():
 @app.route('/listings', methods=['GET'])
 def get_products():
     products = load_products()
+    category = request.args.get('category')  # Get the category from query parameters
+    
+    if category:
+        # Filter products by category
+        products = [product for product in products if product['category'] == category]
     return jsonify(products)
 
 if __name__ == '__main__':
