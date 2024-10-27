@@ -19,10 +19,10 @@ def searchFor(searchPhrase, catListings):
             prio['prio4'].append(listing)
 
     res = []
-    res.append(prio['prio1'])
-    res.append(prio['prio2'])
-    res.append(prio['prio3'])
-    res.append(prio['prio4'])
+    res.extend(prio['prio1'])
+    res.extend(prio['prio2'])
+    res.extend(prio['prio3'])
+    res.extend(prio['prio4'])
     return res
 
 def advancedSearch(catListings, productPhrase, locationPhrase = None):
@@ -47,7 +47,7 @@ def advancedSearch(catListings, productPhrase, locationPhrase = None):
             prio['prio3'].append(listing)
     
     res = []
-    res.append(prio['prio1'])
-    res.append(prio['prio2'])
-    res.append(prio['prio3'])
+    res.extend(prio['prio1'])
+    res.extend(prio['prio2'])
+    res.extend(prio['prio3'])
     return res
