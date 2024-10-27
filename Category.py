@@ -1,35 +1,51 @@
+class Category:
+    """Categorizing the listings"""
+    listings: list
 
-
-class Category: 
-    """Categorizing the listings """
-    listings: list[Listing]
     def __init__(self) -> None:
-        self.listings = listings
+        self.listings = []
 
-    def add(listing: Listing) -> None:
-        listings.append(listing) 
+    def add(self, listing) -> None:
+        self.listings.append(listing)
+
+    def __str__(self) -> str:
+        return "Category"  # Generic name for the base class
 
 
 class Product(Category):
     """All the listings that hold products"""
-    listings: list[Listing]
+
+    def __str__(self) -> str:
+        return "Product"
 
 
 class Labour(Category):
     """All the listings that advertise labour"""
-    listings: list[Listing]
+
+    def __str__(self) -> str:
+        return "Labour"
+
 
 class Services(Category):
     """All the listings that advertise professional services such as drought dugouts and 
     implementing irrigation systems
     """
-    listings: list[Listing]
+
+    def __str__(self) -> str:
+        return "Services"
+
 
 class Transportation(Category):
-    """All the listings that advertise transportation such as cars, trucks,etc. """
-    listings: list[Listing]
+    """All the listings that advertise transportation such as cars, trucks, etc."""
 
-class Lifestock(Category):
-    """All the listings that advertise sale of lifestock and related materials such as 
-     feed, supplies, etc. """
-    listings: list[Listing]
+    def __str__(self) -> str:
+        return "Transportation"
+
+
+class Livestock(Category):
+    """All the listings that advertise sale of livestock and related materials such as 
+     feed, supplies, etc.
+    """
+
+    def __str__(self) -> str:
+        return "Livestock"
