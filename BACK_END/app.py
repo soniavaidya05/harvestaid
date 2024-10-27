@@ -11,7 +11,7 @@ def load_products():
 def index():
     return render_template('listings_template.html')
 
-@app.route('/products', methods=['GET'])
+@app.route('/listings', methods=['GET'])
 def get_products():
     products = load_products()
     return jsonify(products)
