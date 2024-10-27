@@ -44,7 +44,7 @@
 </head>
 <body>
     <div style="background-color: rgb(245, 244, 227); height: 4rem;" class="fixed inset-x-0 top-0 flex justify-between items-center">
-        <a><img class="my-auto" src="{{ url_for('static', filename='logo.png') }}" style="width: auto; height: 50px;"></a>
+        <a href="https://www.google.com/" class="w-14 px-2"><img class="my-auto" src="{{ url_for('static', filename='logo.png') }}" style="width: auto; height: 50px;"></a>
         <input type="search" name="query" placeholder="Search" class="border flex-1 h-10 rounded mx-20 px-2">
         <div class="w-12 pr-2">
             <svg style="fill: rgb(178 192 176);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -81,7 +81,7 @@
                         const gridItem = document.createElement('div');
                         gridItem.className = 'listing-item';
                         gridItem.innerHTML = `
-        
+                                 <a class="p-4" href="https://www.google.com/">
                               
                                   <img src="${listing.image_url}" alt="${listing["product name"]}">
                               
@@ -90,7 +90,7 @@
                               <p class="underline cursor-pointer text-md text-slate-500">${listing.location}</p>
                               <p style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; text-overflow: ellipsis;">${listing.description}</p>
                               <p class="text-slate-500 underline cursor-pointer mt-5">${listing.contact}</p>
-                          
+                                    </a>
                         `;
                         gridContainer.appendChild(gridItem);
                     });
