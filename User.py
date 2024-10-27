@@ -11,6 +11,7 @@ class User:
         self.username = username
         self.password = password
         self.listings = []
+        self.email = email
         self.needs = []
     
     def new_listing(self, category:str, product_name: str, location: str, description: str) -> None: 
