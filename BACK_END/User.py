@@ -1,5 +1,5 @@
 from listing import Listing
-import staticvariables
+import staticvariables as staticvariables
 
 class User: 
     username: str

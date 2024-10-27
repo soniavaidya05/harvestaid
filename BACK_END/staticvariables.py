@@ -1,4 +1,4 @@
-import Category
+import Category as Category
 from Category import Product
 from Category import Labour
 from Category import Services

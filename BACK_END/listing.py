@@ -1,5 +1,5 @@
-import Category
-import staticvariables
+import Category as Category
+import staticvariables as staticvariables
 
 class Listing:
     """This class is the listing class.

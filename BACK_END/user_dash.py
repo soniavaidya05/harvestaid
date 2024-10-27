@@ -1,4 +1,4 @@
-import User
+import User as User
 
 clients_logins = {}
 clients = {}
