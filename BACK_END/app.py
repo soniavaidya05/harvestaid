@@ -71,17 +71,21 @@ def get_products():
 #     else:
 #         return "Product not found", 404
 
-@app.route('/listings/<int:listing_id>', methods=['GET'])
-def product_details(listing_id):
-    # if 'username' not in session:
-    #     return redirect(url_for('login_view'))  # Redirect to login if not logged in
+# @app.route('/listings/<int:listing_id>', methods=['GET'])
+# def product_details(listing_id):
+#     # if 'username' not in session:
+#     #     return redirect(url_for('login_view'))  # Redirect to login if not logged in
 
-    products = load_products()
-    listing = next((p for p in products if p['product name'] == listing_id), None)
-    if listing:
-        return render_template('productPage.html', listing=listing)
-    else:
-        return "Product not found", 404
+#     products = load_products()
+#     listing = next((p for p in products if p['product name'] == listing_id), None)
+#     if listing:
+#         return render_template('productPage.html', listing=listing)
+#     else:
+#         return "Product not found", 404
+
+@app.route('/productPage')
+def product_page():
+    return render_template('productPage.html')
     
 # @app.route('/index')
 # def index():

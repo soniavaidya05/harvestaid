@@ -81,7 +81,6 @@
                         const gridItem = document.createElement('div');
                         gridItem.className = 'listing-item';
                         gridItem.innerHTML = `
-                                  <a href="${listing.link}">
                                 <img src="${listing.image_url}" alt="${listing["product name"]}">
                                 <h3 class="text-2xl">${listing["product name"]}</h3>
                                 <p class="text-lg">${listing.category}</p>
@@ -90,6 +89,11 @@
                                 <p class="text-slate-500 underline cursor-pointer mt-5">${listing.contact}</p>
                             </a>
                         `;
+                        gridItem.onclick = () => {
+                            sessionStorage.setItem("selectItem", JSON.stringify(listing));
+                            window.location.href = "/productPage";
+                        };
+                        
                         gridContainer.appendChild(gridItem);
                     });
                 })
