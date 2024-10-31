@@ -15,13 +15,51 @@
         <div class="w-12 pr-2"><svg style="fill: #565656;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M406.5 399.6C387.4 352.9 341.5 320 288 320l-64 0c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3l64 0c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"/></svg></div>
     </div>
     <div style="background-color: rgb(245 244 227);" class="flex pt-10 my-auto">
-        <div class="flex-1"><img style="width: 80%; border-radius: 15px;" class="mx-auto shadow-md hover:shadow-inner" src="/static/images/labour.jpg"></div>
+        <!-- <div class="flex-1"><img style="width: 80%; border-radius: 15px;" class="mx-auto shadow-md hover:shadow-inner" src="/static/images/labour.jpg"></div>
         <div class="flex-1 flex flex-col relative">
-            <div style="font-family: Chewy;" class="text-6xl mb-px">${listing["product name"]}</div>
-            <div class="mb-10 underline">${listing.location}</div>
-            <div class="pr-5 leading-loose text-lg">${listing.description}</div>
+            <div style="font-family: Chewy;" class="text-6xl mb-px">Product</div>
+            <div class="mb-10 underline">Location</div>
+            <div class="pr-5 leading-loose text-lg">Description</div>
             <a href="mailto:abc@gmail.com" class="absolute mt-10 underline bottom-10 z-10">Connect!</a>
+        </div> -->
+
+        <!-- <div class="selectitem-details">
+            <img id="selectitem-image" src="" alt="Product Image" class="w-full h-auto rounded-md">
+            <h1 id="selectitem-name" class="text-4xl font-bold"></h1>
+            <p id="selectitem-location" class="text-xl text-gray-600"></p>
+            <p id="selectitem-description" class="mt-4 text-lg"></p>
+            <p id="selectitem-contact" class="text-lg text-blue-500 underline cursor-pointer"></p>
+        </div> -->
+
+        <div class="flex-1">
+            <img id="selectitem-image" src="" alt="Product Image" class="w-4/5 rounded-lg mx-auto shadow-md hover:shadow-inner">
+        </div>
+        <div class="flex-1 flex flex-col relative">
+            <div style="font-family: Chewy;" class="text-6xl mb-px" id="selectitem-name"></div>
+            <div class="mb-10 underline" id="selectitem-location"></div>
+            <div class="pr-5 leading-loose text-lg" id="selectitem-description"></div>
+            <a href="mailto:abc@gmail.com" class="absolute mt-10 underline bottom-10 z-10" id="selectitem-contact">Connect!</a>
         </div>
     </div>
+
+        <script>
+            // The JavaScript code is wrapped in a <script> tag and executes when the page finishes loading (DOMContentLoaded event).
+            document.addEventListener("DOMContentLoaded", function() {
+                const product = JSON.parse(sessionStorage.getItem("selectItem"));
+    
+                if (product) {
+                    document.getElementById("selectitem-image").src = product.image_url;
+                    document.getElementById("selectitem-name").textContent = product["product name"];
+                    document.getElementById("selectitem-location").textContent = product.location;
+                    document.getElementById("selectitem-description").textContent = product.description;
+                    document.getElementById("selectitem-contact").textContent = product.contact;
+                    document.getElementById("selectitem-contact").href = `mailto:${product.contact}`;
+                } else {
+                    console.error("No product data found.");
+                    window.location.href = "listings_template.html";
+                }
+            });
+        </script>
+
 </body>
 </html>
