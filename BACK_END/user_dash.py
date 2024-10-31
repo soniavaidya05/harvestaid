@@ -1,19 +1,19 @@
-import User as User
+from User import User
 
 clients_logins = {}
 clients = {}
 
-def signup(username, password) -> bool:
-    if username not in clients_logins: 
-        clients_logins[username] = password
-        clients[username] = (User(username, password))
+def signup_func(u, e, p) -> bool:
+    if u not in clients_logins: 
+        clients_logins[u] = p
+        clients[u] = (User(u, p, e))
         return True
     else: 
         return False
 
 
-def login(username, password) -> bool: 
-    if clients_logins[username] == password: 
+def login_func(u, p) -> bool: 
+    if clients_logins[u] == p: 
             # return clients[username]
             return True
     else: 
