@@ -29,16 +29,32 @@
                 </div>
         </div>
         <div style="margin-top: 4rem;">
-            <div>Add Listing!</div>
-            <form style="width: 500px;" class="flex flex-col">
-                <label>Name of Product:</label><input name="nameOfProduct" type="text">
+            <div class="text-center font-bold text-2xl mb-4">Add Listing</div>
+        <form action="{{ url_for('new_listing') }}" method="POST" enctype="multipart/form-data" style="width: 500px;" class="flex flex-col mx-auto space-y-4">
+            <label for="title">Name of Product:</label>
+            <input id="title" name="title" type="text" class="border p-2 rounded" required>
 
-                <label>description:</label>
-                <textarea class="h-60" name="description" style="resize: none; overflow: auto;"></textarea>
-                
-                <!-- Take this buttom one down if you don't need it -->
-                <label>Choose image?:</label><input name="picture" class="h-60" type="file" accept="image/png, image/jpg, image/jpeg">
-            </form>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" class="border p-2 rounded h-40" style="resize: none;" required></textarea>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" class="border p-2 rounded" required>
+                <option value="">Select Category</option>
+                <option value="Product_Category">Product_Category</option>
+                <option value="Labour_Category">Labour_Category</option>
+                <option value="Service_Category">Service_Category</option>
+                <option value="Transportation_Category">Transportation_Category</option>
+                <option value="Livestock_Category">Livestock_Category</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input id="location" name="location" type="text" class="border p-2 rounded" required>
+
+            <label for="picture">Choose Image:</label>
+            <input id="picture" name="picture" type="file" class="border p-2 rounded" accept="image/png, image/jpg, image/jpeg">
+
+            <button type="submit" class="bg-blue-500 text-white py-2 rounded">Submit</button>
+        </form>
         </div>
     </body>
 </html>
