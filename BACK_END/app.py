@@ -57,6 +57,10 @@ def get_products():
 def product_page():
     return render_template('productPage.html')
 
+@app.route('/addListing')
+def add_listing():
+    return render_template('addListing.html')
+
 if __name__ == '__main__':
     app.run(debug=True)  # Set to False in production
 

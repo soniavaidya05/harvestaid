@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Tailwind CSs -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Icon -->
+        <link rel="icon" href="../static/logo.png" type="image/png">
+        <!-- Font Links...? -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+        <!-- Title -->
+        <title>Add Listing</title>
+    </head>
+    <body style="background-color: rgb(178, 192, 176);">
+        <div style="background-color: rgb(245 244 227); height: 4rem;" class="fixed inset-x-0 top-0 flex justify-between items-center z-20">
+            <img class="my-auto ml-2 cursor-pointer" src="{{ url_for('static', filename='logo.png') }}" style="width: auto; height: 50px;" onclick="window.location.href='../'">
+            <input type="search" name="query" placeholder="Search" class="border flex-1 h-10 rounded mx-20 px-2">
+            <div class="w-20 pr-2 flex">
+                <svg style="fill: rgb(178, 192, 176);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="cursor-pointer" onclick="window.location.href='../'">
+                    <path d="M406.5 399.6C387.4 352.9 341.5 320 288 320l-64 0c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3l64 0c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"/>
+                </svg>
+                <!-- If YOU WANT TO ADD A NEW PAGE LINK. CHANGE THE CODE INSIDE ONCLICK -->
+                <svg style="fill: rgb(178, 192, 176);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="ml-4 cursor-pointer" onclick="window.location.href='/addListing'">
+                    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
+                </svg>
+                </div>
+        </div>
+        <div style="margin-top: 4rem;">
+            <div>Add Listing!</div>
+            <form style="width: 500px;" class="flex flex-col">
+                <label>Name of Product:</label><input name="nameOfProduct" type="text">
+
+                <label>description:</label>
+                <textarea class="h-60" name="description" style="resize: none; overflow: auto;"></textarea>
+                
+                <!-- Take this buttom one down if you don't need it -->
+                <label>Choose image?:</label><input name="picture" class="h-60" type="file" accept="image/png, image/jpg, image/jpeg">
+            </form>
+        </div>
+    </body>
+</html>
