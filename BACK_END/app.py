@@ -1,10 +1,16 @@
 from flask import Flask, render_template, jsonify, request, redirect, url_for, session
-from user_dash import signup_func, login_func
+from user_dash import signup_func, login_func, clients_logins, clients
 from secretkey import sk
+from User import User
 import json
+from werkzeug.utils import secure_filename
+import os
 
 app = Flask(__name__)
 app.secret_key = sk
+
+UPLOAD_FOLDER = 'BACK_END/static/uploads'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def load_products():
     with open('listingdatabase.json') as f:
@@ -53,13 +59,52 @@ def get_products():
         products = [product for product in products if product.get('category') == category]
     return jsonify(products)
 
+def save_products(products):
+    """Save the updated products list to listingdatabase.json."""
+    with open('listingdatabase.json', 'w') as f:
+        json.dump(products, f, indent=4)
+
+
 @app.route('/productPage')
 def product_page():
     return render_template('productPage.html')
 
-@app.route('/addListing')
-def add_listing():
+@app.route('/addListing', methods=['GET', 'POST'])
+def new_listing():
+    if request.method == 'POST':
+        title = request.form['title']
+        description = request.form['description']
+        category = request.form['category']
+        location = request.form['location']
+        
+        
+
+            # Process image if uploaded
+        picture = request.files.get('picture')
+        picture_path = None
+        if picture:
+            filename = secure_filename(picture.filename)
+            picture_path = os.path.join(UPLOAD_FOLDER, filename)
+    
+            # Save the image in the upload folder
+            picture.save(picture_path)
+        
+        username = session['username']  # Get the current logged-in user
+        user = clients.get(username)  # Access the user object from the clients dictionary
+
+        if user:
+            # Call the new_listing method from User
+            user.new_listing(category, title, location, description, picture_path)
+
+            # Optionally save all products if needed
+            products = load_products()  # Reload products after adding a new one
+            save_products(products)
+
+        return redirect(url_for('index'))  # Redirect to listings page
+    
+    # If GET request, render the form page
     return render_template('addListing.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)  # Set to False in production
