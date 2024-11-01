@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/New_Hacks-removebg-preview.png" type="image/icon type">
+    <link rel="icon" href="../static/logo.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <title>productPage</title>
@@ -17,7 +17,7 @@
                 <path d="M406.5 399.6C387.4 352.9 341.5 320 288 320l-64 0c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3l64 0c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"/>
             </svg>
             <!-- If YOU WANT TO ADD A NEW PAGE LINK. CHANGE THE CODE INSIDE ONCLICK -->
-            <svg style="fill: rgb(245 244 227);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="ml-4 cursor-pointer" onclick="window.location.href='../'">
+            <svg style="fill: rgb(245 244 227);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="ml-4 cursor-pointer" onclick="window.location.href='/addListing'">
                 <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
             </svg>
             </div>
@@ -46,11 +46,11 @@
             <div style="font-family: Chewy;" class="text-6xl mb-px" id="selectitem-name"></div>
             <div class="mb-10 underline" id="selectitem-location"></div>
             <div class="pr-5 leading-loose text-lg" id="selectitem-description"></div>
-            <div class="flex flex-row">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6">
+            <div id="selection-email" class="flex mt-20 pr-2 space-x-2 items-center bottom-10" onclick="window.location.href='mailto:abc@gmail.com'">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 cursor-pointer">
                     <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/>
                 </svg>
-                <a href="mailto:abc@gmail.com" class="absolute mt-10 underline bottom-10 z-10" id="selectitem-contact"></a>    
+                <a href="mailto:abc@gmail.com" class="underline z-10" id="selectitem-contact"></a>    
             </div>
         </div>
     </div>
@@ -67,6 +67,7 @@
                     document.getElementById("selectitem-description").textContent = product.description;
                     document.getElementById("selectitem-contact").textContent = product.contact;
                     document.getElementById("selectitem-contact").href = `mailto:${product.contact}`;
+                    document.getElementById("selection-email").href = `mailto:${product.contact}`;
                 } else {
                     console.error("No product data found.");
                     window.location.href = "listings_template.html";
