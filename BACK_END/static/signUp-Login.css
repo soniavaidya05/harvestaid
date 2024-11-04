@@ -1,0 +1,81 @@
+.main {
+    width: 300px;
+    margin: auto;
+    padding: 40px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgb(178 192 176);
+}
+
+.form-container {
+    display: none; /* Hide both forms by default */
+    transition: opacity 0.6s ease;
+}
+
+.form-container.active {
+    display: block;
+}
+
+/* .switch-button {
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(130, 146, 128);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+} */
+
+.inputPlaces {
+    margin-top: 10px;
+    border-radius: 0.375rem;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.inputPlaces:focus {
+    box-shadow: 0 0 10px 5px rgba(97, 207, 244, 0.5);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(245 244 227);
+}
+
+.signUpSubmit {
+    margin-top: 40px;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(130, 146, 128);
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.20s ease-in-out;
+}
+
+.signUpSubmit:hover {
+    background-color: rgb(97, 106, 96);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.signUpText {
+    margin-bottom: 30px;
+    font-size: 30px;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    font-weight: 700;
+    color: rgb(97, 110, 95);
+}
+
+.loginSwitch {
+    text-decoration: underline;
+    font-size: 14px;
+}
