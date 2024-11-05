@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Chewy } from "next/font/google";
 
 
@@ -47,12 +48,13 @@ const LoginPage: React.FC = () => {
                             className="w-full px-3 py-2 border rounded"
                         />
                     </div>
-                    <button
+                    <Link
                         type="submit"
-                        className={`px-5 py-2 text-xl text-white bg-[#b2c0b0] border-b-4 border-[#8b9c8d] rounded transition ease-in-out transform hover:translate-y-1 hover:border-0 ${chewyFont.className}`}
+                        className={`mx-auto my-auto px-5 py-2 text-xl text-white bg-[#b2c0b0] border-b-4 border-[#8b9c8d] rounded transition ease-in-out transform hover:translate-y-1 hover:border-0 ${chewyFont.className}`}
+                        href="/products"
                     >
                         Login
-                    </button>
+                    </Link>
                 </form>
             </div>
         </div>

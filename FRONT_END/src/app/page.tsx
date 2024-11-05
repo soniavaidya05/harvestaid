@@ -16,7 +16,7 @@ export default function Home() {
           alt="Harvest Aid Text"
           width={2300}
           height={500}
-          className="my-auto objection-contain"
+          className="my-auto object-contain"
         />
       </div>
       <div className="flex justify-center h-2/3">
