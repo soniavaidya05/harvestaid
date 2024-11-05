@@ -2,6 +2,8 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+HarvestAid is a web app that connects farmers impacted by natural disasters to trade resources directly and build resilient community-driven supply chains.
+
 ## Getting Started
 
 First, run the development server:
