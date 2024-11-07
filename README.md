@@ -1,38 +1,64 @@
-# Harvest Aid
+# HarvestAid 🌾
 
-HarvestAid is a web app that connects farmers impacted by natural disasters to trade resources directly and build resilient community-driven supply chains.
+**HarvestAid** was developed at **NewHacks 2024** to support farmers affected by natural disasters. This platform provides a network for farmers to trade resources and establish direct supply chains, fostering resilience and recovery within agricultural communities.
 
-## Getting Started
+## 🌟 Project Overview
 
-First, run the development server:
+HarvestAid is a web application that connects farmers who face resource shortages due to natural disasters. By enabling farmers to exchange goods and services, the platform facilitates a sustainable approach to recovery, helping farmers rebuild their operations and secure essential supplies through a supportive network.
 
+## 👩‍💻 Tech Stack
+
+- **Frontend**: Next.js, JavaScript, HTML, CSS (Tailwind)
+- **Backend**: Flask, Python
+- **APIs**: Utilizes relevant APIs for real-time data on natural disasters and agricultural resources.
+
+## 🌱 Key Features
+
+- **Resource Trading Platform**: Farmers can list and trade resources, such as seeds, equipment, and labor.
+- **Direct Supply Chain Connections**: Establish direct connections with other farmers and suppliers for efficient, reliable supply chains.
+- **Disaster Response Coordination**: Helps farmers prepare and respond to shortages caused by natural disasters through a community-driven approach.
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Flask
+- Node.js
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mairara/harvestaid.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd harvestaid
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Set up environment variables by creating a `.env` file (see below).
+
+### Environment Variables
+Create a `.env` file in the root directory and add your API keys:
+   ```plaintext
+   NEXT_PUBLIC_API_KEY=your_api_key
+  ```
+
+### Run the Application
+Start the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to `http://localhost:3000` to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👥 Team Members
+- Sonia Vaidya
+- Maira Masroor
+- Mohammadamin Sedaghat
+- Nathan Romero
