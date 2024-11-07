@@ -16,8 +16,8 @@ const ProductPage = () => {
     return (
         <div style={{ backgroundColor: 'rgb(245 244 227)' }}>
             <div style={{ backgroundColor: 'rgb(178 192 176)' }} className="h-14 flex justify-between items-center">
-                <a href="https://www.google.com/" className="w-14 px-2">
-                    <Image src="/images/New_Hacks-removebg-preview.png" alt="Logo" width={56} height={56} />
+                <a href="/" className="w-14 px-2">
+                    <Image src="/New_Hacks-removebg-preview.png" alt="Logo" width={56} height={56} />
                 </a>
                 <input type="search" name="query" placeholder="Search" className="border flex-1 h-10 rounded mx-20 px-2" />
                 <div className="w-12 pr-2">
