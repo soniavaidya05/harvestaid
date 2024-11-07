@@ -41,14 +41,6 @@ HarvestAid is a web application that connects farmers who face resource shortage
    npm install
    ```
 
-4. Set up environment variables by creating a `.env` file (see below).
-
-### Environment Variables
-Create a `.env` file in the root directory and add your API keys:
-   ```plaintext
-   NEXT_PUBLIC_API_KEY=your_api_key
-  ```
-
 ### Run the Application
 Start the development server:
 ```bash
