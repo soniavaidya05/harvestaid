@@ -26,13 +26,7 @@ class User:
 
         with open('all_users.json', 'r+') as file:
             all_users = json.load(file)
-            
-        #     # Ensure listings are converted to dictionaries
-        #     all_users[self.username]['listings'] = [listing.to_dict for listing in self.listings]
-            
-        #     file.seek(0)
-        #     json.dump(all_users, file, indent=4)
-        #     file.truncate()
+        
 
         # Update the user's listings
         all_users[self.username] = all_users.get(self.username, {
@@ -43,14 +37,12 @@ class User:
             "needs": []
         })
         
-        all_users[self.username]["listings"] = [listing.to_dict() for listing in self.listings]
+        all_users[self.username]["listings"] = [listing.to_dict() for listing in self.listings if isinstance(listing, Listing)]
 
         # Write the updated data back to the JSON file
         with open("all_users.json", "w") as f:
             json.dump(all_users, f, indent=4)
 
-    
-        
         with open('listingdatabase.json', 'r+') as file:
             products = json.load(file)
         
