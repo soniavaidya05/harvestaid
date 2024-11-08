@@ -28,3 +28,14 @@ class Listing:
         self.location = location
         self.description = description
         self.image_url= image_url
+
+    def to_dict(self):
+        # Convert Listing object to dictionary
+        return {
+            "username": self.username,
+            "category": str(self.category),  # Convert category to string (name)
+            "product_name": self.product_name,
+            "location": self.location,
+            "description": self.description,
+            "image_url": self.image_url
+        }

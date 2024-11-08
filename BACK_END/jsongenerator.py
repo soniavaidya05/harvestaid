@@ -1,7 +1,8 @@
 import json
 from User import User
+from user_dash import clients
+from staticvariables import map
 
-# Creating Users and Listings
 # Creating Users and Listings
 maira = User("maira", "maira123", "maira@gmail.com")
 maira.new_listing("Product_Category", "Corn Seeds", "Mumbai", "Selling 1 bag of Corn Seeds!", "/static/images/product.jpg")
@@ -54,15 +55,33 @@ kevin.new_listing("Livestock_Category", "Goats", "Fes", "4 available", "/static/
 kevin.new_listing("Livestock_Category", "Pigs", "Multan", "6 available", "/static/images/livestock.jpg")
 
 
-# List of users and their listings
-users = [maira, amin, sonia, nathan, kevin]
 
-# Writing data to JSON
+# List of users and their listings
+# users = [maira, amin, sonia, nathan, kevin]
+
+# # Writing data to JSON
+# data = []
+# for user in users:
+#     for listing in user.listings:
+#         entry = {
+#             "contact": user.email,
+#             "category": str(listing.category),
+#             "product name": listing.product_name,
+#             "location": listing.location,
+#             "description": listing.description,
+#             "image_url": listing.image_url
+#         }
+#         data.append(entry)
+
+# with open('listingdatabase.json', 'w') as f:
+#     json.dump(data, f, indent=4)
+
 data = []
-for user in users:
-    for listing in user.listings:
+Categories = ["Product_Category" ,"Labour_Category","Service_Category","Transportation_Category","Livestock_Category"]
+for categorys in Categories:
+    for listing in map[categorys].listings:
         entry = {
-            "contact": user.email,
+            "contact": User.all_users[listing.username].email,
             "category": str(listing.category),
             "product name": listing.product_name,
             "location": listing.location,

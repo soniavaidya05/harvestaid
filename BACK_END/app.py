@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify, request, redirect, url_for, session
-from user_dash import signup_func, login_func, clients_logins, clients
+from user_dash import signup_func, login_func, get_user_by_username
 from secretkey import sk
 from User import User
 import json
@@ -12,9 +12,20 @@ app.secret_key = sk
 UPLOAD_FOLDER = 'BACK_END/static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+try:
+    with open('client_logins.json', 'r') as file:
+        client_logins = json.load(file)
+except json.JSONDecodeError:
+    client_logins = {}  
+    
+
 def load_products():
-    with open('listingdatabase.json') as f:
-        return json.load(f)
+    try:
+        with open('listingdatabase.json') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []  # Return an empty list if the file is missing or empty
+
 
 @app.route('/')  
 def get_started():
@@ -44,7 +55,8 @@ def signup_view():
         username = request.form['username']
         email = request.form['email']
         password = request.form['password']
-        if signup_func(username, email, password):
+        signed_in = signup_func(username, email, password)
+        if signed_in:
             return redirect(url_for('login_view'))  # Redirect to login page on successful signup
         else:
             return redirect(url_for('signup_view'))  # Redirect back to signup page if signup fails
@@ -69,6 +81,7 @@ def save_products(products):
 def product_page():
     return render_template('productPage.html')
 
+
 @app.route('/addListing', methods=['GET', 'POST'])
 def new_listing():
     if request.method == 'POST':
@@ -76,29 +89,34 @@ def new_listing():
         description = request.form['description']
         category = request.form['category']
         location = request.form['location']
-        
-        
-
-            # Process image if uploaded
+    
+        # Process image if uploaded
         picture = request.files.get('picture')
         picture_path = None
+        image_url = None
         if picture:
             filename = secure_filename(picture.filename)
-            picture_path = os.path.join(UPLOAD_FOLDER, filename)
-    
+            picture_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+
             # Save the image in the upload folder
             picture.save(picture_path)
+
+            # Use the relative path for the URL, stored in the database as 'uploads/filename'
+            image_url = f'uploads/{filename}'
+
         
         username = session['username']  # Get the current logged-in user
-        user = clients.get(username)  # Access the user object from the clients dictionary
+        user = get_user_by_username(username)  # Access the user object from the clients dictionary
+        user.new_listing(category, title, location, description, picture_path)
+        products = load_products()  # Reload products after adding a new one
+        save_products(products)
+        # if user:
+        #     # Call the new_listing method from User
+        #     user.new_listing(category, title, location, description, picture_path)
 
-        if user:
-            # Call the new_listing method from User
-            user.new_listing(category, title, location, description, picture_path)
-
-            # Optionally save all products if needed
-            products = load_products()  # Reload products after adding a new one
-            save_products(products)
+        #     # Optionally save all products if needed
+        #     products = load_products()  # Reload products after adding a new one
+        #     save_products(products)
 
         return redirect(url_for('index'))  # Redirect to listings page
     
