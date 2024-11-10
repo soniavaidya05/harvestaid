@@ -1,0 +1,18 @@
+{
+    "maira_123": {
+        "username": "maira_123",
+        "password": "1",
+        "email": "mairamasroor05@gmail.com",
+        "listings": [
+            {
+                "contact": "mairamasroor05@gmail.com",
+                "category": "Product",
+                "product name": "Potatoes",
+                "location": "toronto canada",
+                "description": "6 potatoes for sale",
+                "image_url": "/static/images/potato.jpg"
+            }
+        ],
+        "needs": []
+    }
+}
