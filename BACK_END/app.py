@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 app.secret_key = sk
 
-UPLOAD_FOLDER = 'BACK_END/static/uploads'
+UPLOAD_FOLDER = 'BACK_END/static/images'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 try:
@@ -102,12 +102,12 @@ def new_listing():
             picture.save(picture_path)
 
             # Use the relative path for the URL, stored in the database as 'uploads/filename'
-            image_url = f'uploads/{filename}'
+            image_url = f'/static/images/{filename}'
 
         
         username = session['username']  # Get the current logged-in user
         user = get_user_by_username(username)  # Access the user object from the clients dictionary
-        user.new_listing(category, title, location, description, picture_path)
+        user.new_listing(category, title, location, description, image_url)
         products = load_products()  # Reload products after adding a new one
         save_products(products)
         # if user:

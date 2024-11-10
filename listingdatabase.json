@@ -318,5 +318,13 @@
         "location": "Multan",
         "description": "6 available",
         "image_url": "/static/images/livestock.jpg"
+    },
+    {
+        "contact": "mairamasroor05@gmail.com",
+        "category": "Product",
+        "product name": "Potatoes",
+        "location": "toronto canada",
+        "description": "6 potatoes for sale",
+        "image_url": "/static/images/potato.jpg"
     }
 ]
