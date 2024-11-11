@@ -14,5 +14,12 @@
             }
         ],
         "needs": []
+    },
+    "amin": {
+        "username": "amin",
+        "password": "123",
+        "email": "m.aminsedaghat84@gmail.com",
+        "listings": [],
+        "needs": []
     }
 }
