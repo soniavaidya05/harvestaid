@@ -7,11 +7,57 @@
     <script src="https://cdn.tailwindcss.com"></script><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <title>productPage</title>
+    <style>
+        /* Here are the css for search engine, make sure to include it wherever there is a serach engine */
+      .searchIcon {
+        height: 40px;
+        background-color: rgb(165, 179, 162);
+        padding: 7px;
+
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+        fill: rgb(71, 80, 69);
+        transition: all 0.5s;
+      }
+
+      .searchIcon:hover {
+        background-color: rgb(113, 122, 112);
+        fill: rgb(159, 172, 156);
+      }
+
+      .Search-container{
+        flex: 1 1 700px;
+        max-width: 700px;
+        display: flex;
+        margin: 0 20px;
+        align-items: center;
+      }
+
+      #search_engine {
+        flex: 1;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding-left: 20px;
+        outline: none;
+      }
+
+      .Search-container:has(#search_engine:focus) {
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      }
+    </style>
 </head>
 <body style="background-color: rgb(245 244 227);">
     <div style="background-color: rgb(178, 192, 176); height: 4rem;" class="fixed inset-x-0 top-0 flex justify-between items-center z-20">
         <img class="my-auto ml-2 cursor-pointer" src="{{ url_for('static', filename='logo.png') }}" style="width: auto; height: 50px;" onclick="window.location.href='/listings_dir'">
-        <input type="search" name="query" placeholder="Search" class="border flex-1 h-10 rounded mx-20 px-2">
+        <div class="Search-container">
+          <input id="search_engine" type="search" name="query" placeholder="Search" class="h-10 px-2" onkeypress="if(event.key === 'Enter') searchListings()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="searchIcon" onclick="searchListings()">
+            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+          </svg>
+        </div>
+        
         <div class="w-20 pr-2 flex">
             <svg style="fill: rgb(245 244 227);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="cursor-pointer" onclick="window.location.href='../'">
                 <path d="M406.5 399.6C387.4 352.9 341.5 320 288 320l-64 0c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3l64 0c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"/>
@@ -21,7 +67,8 @@
                 <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
             </svg>
             </div>
-    </div>
+      </div>
+
     <div style="background-color: rgb(245 244 227);" class="flex pt-10 mt-16">
         <!-- <div class="flex-1"><img style="width: 80%; border-radius: 15px;" class="mx-auto shadow-md hover:shadow-inner" src="/static/images/labour.jpg"></div>
         <div class="flex-1 flex flex-col relative">
@@ -56,7 +103,6 @@
     </div>
 
         <script>
-            // The JavaScript code is wrapped in a <script> tag and executes when the page finishes loading (DOMContentLoaded event).
             document.addEventListener("DOMContentLoaded", function() {
                 const product = JSON.parse(sessionStorage.getItem("selectItem"));
     
@@ -73,6 +119,13 @@
                     window.location.href = "listings_template.html";
                 }
             });
+
+            // Search Function
+        function searchListings() {
+            sessionStorage.setItem('searchListings', 'true')
+            sessionStorage.setItem('searchPhrase', document.getElementById('search_engine').value)
+            window.location.href = '/listings_dir'
+        }
         </script>
 
 </body>
