@@ -9,13 +9,13 @@ def searchFor(searchPhrase, catListings):
     #They are filtered by priority, so the higher priority is put first on a list.
     searchPhrase = searchPhrase.lower()
     for listing in catListings:
-        if searchPhrase == listing.product_name.lower():
+        if searchPhrase == listing["product name"].lower():
             prio['prio1'].append(listing)
-        elif searchPhrase in listing.product_name.lower():
+        elif searchPhrase in listing["product name"].lower():
             prio['prio2'].append(listing)
-        elif searchPhrase in listing.location.lower():
+        elif searchPhrase in listing["location"].lower():
             prio['prio3'].append(listing)
-        elif searchPhrase in listing.description.lower():
+        elif searchPhrase in listing['description'].lower():
             prio['prio4'].append(listing)
 
     res = []
