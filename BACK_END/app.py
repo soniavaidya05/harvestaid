@@ -5,6 +5,7 @@ from User import User
 import json
 from werkzeug.utils import secure_filename
 import os
+from search_engine import searchFor
 
 app = Flask(__name__)
 app.secret_key = sk
@@ -69,6 +70,14 @@ def get_products():
     if category:
         # Filter products by category
         products = [product for product in products if product.get('category') == category]
+    return jsonify(products)
+
+@app.route('/searchProducts', methods=['GET'])
+def search_products():
+    #Loading Products.
+    products = load_products()
+    phrase = request.args.get('phrase')
+    products = searchFor(phrase, products)
     return jsonify(products)
 
 def save_products(products):
