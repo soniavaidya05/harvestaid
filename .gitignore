@@ -196,3 +196,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+all_users.json
+client_logins.json
+listingdatabase.json
