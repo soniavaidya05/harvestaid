@@ -49,6 +49,23 @@ npm run dev
 
 Navigate to `http://localhost:3000` to view the app.
 
+### Alternatively
+If the above method doesn't work, clone the repository and paste the following command in the terminal instead.
+
+MacOS/Linux:
+```bash
+python3 BACK_END/app.py
+```
+Windows:
+```bash
+python BACK_END/app.py
+```
+
+You should see a link displayed in the terminal, which you can paste into your favourite browser!
+
+### IMPORTANT NOTE
+Do not use real log-in information. Security measures have not been implemented yet.
+
 ## 👥 Team Members
 - Sonia Vaidya
 - Maira Masroor
