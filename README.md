@@ -49,7 +49,7 @@ npm run dev
 
 Navigate to `http://localhost:3000` to view the app.
 
-### Alternatively
+### Alternatively!!!
 If the above method doesn't work, clone the repository and paste the following command in the terminal instead.
 
 MacOS/Linux:
